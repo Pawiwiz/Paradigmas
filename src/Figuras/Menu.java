@@ -1,6 +1,6 @@
 package Figuras;
 
-import figuras.Triangulo;
+import Figuras.Triangulo;
 
 import java.util.Scanner;
 
