@@ -28,7 +28,7 @@ public class CheckboxFrame extends JFrame {
         BoldJCheckBox = new JCheckBox("Bold");
         ItalicsJCheckBox = new JCheckBox("Italics");
         add(BoldJCheckBox);//adds "bold" checkbox to JFrame
-        add(ItalicsJCheckBox);//adds "italics" checkbox to JFrame
+        add(ItalicsJCheckBox);//adds "italics" checkbox to JFrame.
 
         //registers listener components for JCheckBox objects
         HadlerCheckBox Hadler = new HadlerCheckBox();
