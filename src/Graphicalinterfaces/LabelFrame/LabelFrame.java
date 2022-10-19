@@ -24,7 +24,7 @@ public class LabelFrame extends JFrame {
         add(label1);// add label1 to JFrame
 
         //Jlabel constructor with string, icon, and alignment arguments
-        Icon Insect = new ImageIcon(getClass().getResource("Insect.png"));
+        Icon Insect = new ImageIcon(getClass().getResource("Insect.jpg"));
         label2 = new JLabel("Label with text and icon", Insect, SwingConstants.LEFT);
         label2.setToolTipText("This is the label2");
         add(label2);// add label2 to JFrame
@@ -39,4 +39,4 @@ public class LabelFrame extends JFrame {
 
     }
 
-} // end of LabelFrame class
+} // end of LabelFrame class.
