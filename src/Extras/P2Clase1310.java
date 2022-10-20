@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class P2Clase1310 {
-    public static void main(String[] args) {
+    public static void main(String args) {
         Scanner entrada = new Scanner((System.in));
         int numero;
         String opcion;
@@ -23,6 +23,7 @@ public class P2Clase1310 {
         Integer numeroEntero = 10;
         arreglo.add(numeroEntero);
 
+        System.out.println("Paseme prof le doy 500");
 
     }
 }

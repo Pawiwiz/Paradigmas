@@ -7,8 +7,5 @@ public class Principal {
 
         e1.mostrarInfo();
         p1.mostrarInfo();
-
-
-
     }
 }
