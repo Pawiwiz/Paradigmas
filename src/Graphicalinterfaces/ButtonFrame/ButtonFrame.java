@@ -24,8 +24,8 @@ public class ButtonFrame extends JFrame{
         add(buttonJButtonSimple); // add buttonJButtonSimple a JFrame
 
 
-        Icon insect1= new ImageIcon(getClass().getResource("Insect1.gif"));
-        Icon insect2= new ImageIcon(getClass().getResource("Insect2.gif"));
+        Icon insect1= new ImageIcon(getClass().getResource("insect1.gif"));
+        Icon insect2= new ImageIcon(getClass().getResource("insect2.gif"));
         buttonJButtonElegant = new JButton("Elegant button", insect1);//Set the image
 
         buttonJButtonElegant.setRolloverIcon(insect2);//Set the replacement image
@@ -41,7 +41,7 @@ public class ButtonFrame extends JFrame{
         // handles button event
         @Override
         public void actionPerformed(ActionEvent event){
-            JOptionPane.showMessageDialog(ButtonFrame.this,String.format("Usted oprimio: %s", event.getActionCommand()));
+            JOptionPane.showMessageDialog(ButtonFrame.this,String.format("Your printed: %s", event.getActionCommand()));
         }
     }
 
