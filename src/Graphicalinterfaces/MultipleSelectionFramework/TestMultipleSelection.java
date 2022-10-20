@@ -2,16 +2,18 @@ package Graphicalinterfaces.MultipleSelectionFramework;
 
 //Fig.12.26 TestMultipleSelection.java
 // Test for MultipleSelectionFramework
+
+import Graphicalinterfaces.FrameTextField.FrameTextField;
+
 import javax.swing.JFrame;
 
-
 public class TestMultipleSelection {
-    public static void main(String[] args) {
-
-    //    TestMultipleSelection testMultipleSelection = new TestMultipleSelection();
-      //  testMultipleSelection.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //testMultipleSelection.setSize(350, 140);
-        //testMultipleSelection.setVisible(true);
-
+    public static  void main(String[]args){
+        MultipleSelectionFramework multipleSelectionFramework = new MultipleSelectionFramework();
+        multipleSelectionFramework.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        multipleSelectionFramework.setSize(350,140);
+        multipleSelectionFramework.setVisible(true);
     }
-} // End of the class of TestMultipleSelection
+}
+
+

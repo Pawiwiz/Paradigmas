@@ -1,7 +1,7 @@
-package Graphicalinterfaces.TrackerFrameButton;
+package Graphicalinterfaces.MouseTrackerFrame;
 
 import javax.swing.JFrame;
-public class RatonTracker {
+public class TestRatonTracker {
     public static void main(String[] args) {
         MouseTrackerFrame mouseTrackerFrame = new MouseTrackerFrame();
         mouseTrackerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

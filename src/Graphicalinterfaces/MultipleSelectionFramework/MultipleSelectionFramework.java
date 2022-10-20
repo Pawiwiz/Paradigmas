@@ -12,43 +12,41 @@ import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
 
 public class MultipleSelectionFramework extends JFrame {
-    private final JList<String> listJListColors; // List to store the names of the colors
-    private final JList<String> listJListCopy; // list in which the names of the colors are to be copied the names of the colors
+    private final JList<String> listaJListColores;
+    private final JList<String> listaJListCopia;
 
-    private JButton buttonJButtonCopy; // button to copy the selected names
-    private static final String[] namesColors = {"Black", "Blue", "Cyan",
+    private JButton botonJButtonCopiar;
+    private static final String[] nombresColores = {"Black", "Blue", "Cyan",
             "Dark gray", "Gray", "Green", "Light grey",
             "Magenta", "Orange", "Pink", "Red", "White", "Yellow"};
 
-    // MultipleSelectionFramework Builder
-    public MultipleSelectionFramework ()
+    public MultipleSelectionFramework()
     {
-        super("Multiple Choice Lists");
+        super("multiple choice lists");
         setLayout(new FlowLayout());
-        listJListColors = new JList<String>(namesColors); // list of names of colors
-        listJListColors.setVisibleRowCount(5); //shows five rows
-        listJListColors.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-        add(new JScrollPane(listJListColors));  // add list with scrolling panel scroll
+        listaJListColores = new JList<String>(nombresColores);
+        listaJListColores.setVisibleRowCount(5);
+        listaJListColores.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        add(new JScrollPane(listaJListColores));
 
-        buttonJButtonCopy = new JButton("Copy >>>");
-        buttonJButtonCopy.addActionListener(
-                new ActionListener() // anonymous inner class
+        botonJButtonCopiar = new JButton("Copy >>>");
+        botonJButtonCopiar.addActionListener(
+                new ActionListener()
                 {
-                    // handles button event
                     @Override
                     public void actionPerformed(ActionEvent evento)
                     {
-                        listJListCopy.setListData(listJListColors.getSelectedValuesList().toArray(new String[0]));
+                        listaJListCopia.setListData(listaJListColores.getSelectedValuesList().toArray(new String[0]));
                     }
                 }
         );
-        add(buttonJButtonCopy); // add copy button to JFrame
-        listJListCopy = new JList<String>(); // list to store names of copied colors
-        listJListCopy.setVisibleRowCount(5); // list to store names of copied colors
-        listJListCopy.setFixedCellWidth(100); // sets the width
-        listJListCopy.setFixedCellHeight(15); // sets the height
-        listJListCopy.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-        add(new JScrollPane(listJListCopy)); // add list with scrolling panel scroll
+        add(botonJButtonCopiar);
+        listaJListCopia = new JList<String>();
+        listaJListCopia.setVisibleRowCount(5);
+        listaJListCopia.setFixedCellWidth(100);
+        listaJListCopia.setFixedCellHeight(15);
+        listaJListCopia.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        add(new JScrollPane(listaJListCopia));
 
     }
-} // end of MultipleSelectionFramework class
+}
