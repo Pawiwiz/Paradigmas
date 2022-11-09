@@ -27,7 +27,7 @@ public class PracticaXML{
             documento.setXmlVersion("1.0");
 
             Element Practice = documento.createElement("Practice");
-            Element CV = documento.createElement("CV");
+            Element CV = documento.createElement("Curriculum Vitae");
 
             Element name = documento.createElement("Name");
             Text textName = documento.createTextNode("Paulina");
